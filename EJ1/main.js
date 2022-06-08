@@ -14,10 +14,8 @@ pizza.forEach(function(obj) {
     }
 
 })
-console.log ("Ingredientes Pares");
-console.log(IngredientesPares);
-console.log ("Ingredientes Impares")
-console.log(IngredientesImpares);
+console.log ("Los ingredientes pares son:", IngredientesPares);
+console.log ("Los ingredientes impares son:", IngredientesImpares);
 }
 
 

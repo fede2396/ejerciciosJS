@@ -1,8 +1,8 @@
-function Pizza (id, ingredientes , precio ,nombre) {
-    this.id = id;
+function Pizza (nombre , ingredientes , precio ,id) {
     this.nombre = nombre;
     this.ingredientes = ingredientes;
     this.precio = precio;
+    this.id = id;
     
 }
 
@@ -26,6 +26,7 @@ searchBtn.addEventListener('click', searchPizzaId);
 function searchPizzaId (){
     let getId = document.getElementById('pizza-id').value;
     const searchPizza = pizzas.find(({id}) => id == getId);
+    console.log(searchPizza);
 
     if(!searchPizza){
         pizzaFound.innerHTML = 'Pizza no encontrada';
